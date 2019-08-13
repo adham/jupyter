@@ -1,10 +1,5 @@
-# jupyter
-Jupyter Notebook Docker Image
+#!/usr/bin/env bash
 
-
-Use the following to run the docker image:
-
-``` bash
 docker run \
   -it --rm \
   --user $(id -u):$(id -g) \
@@ -15,4 +10,3 @@ docker run \
   -p 8888:8888 \
   --network=host \
   adham/jupyter
-```  
